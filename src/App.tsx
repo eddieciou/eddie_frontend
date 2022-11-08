@@ -1,14 +1,13 @@
 import React from 'react'
 import './App.css'
+import ProjectsPage from './projects/ProjectsPage'
 
 function App() {
-  function greet(person: string, date: string) {
-    console.log(`Hello ${person}, today is ${date}!`)
-  }
-
-  greet('Brendan', 'Friday')
-
-  return <h1 className='text-3xl font-bold underline'>Hello world!</h1>
+  return (
+    <div className='container'>
+      <ProjectsPage firstName='Eddie' lastName='Ciou' />
+    </div>
+  )
 }
 
 export default App
