@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css'
-import Game from './game/Game'
+import ProjectsPage from './projects/ProjectsPage'
 
 function App() {
   return (
-    <div className='m-5'>
-      <Game />
+    <div>
+      <ProjectsPage />
     </div>
   )
 }
