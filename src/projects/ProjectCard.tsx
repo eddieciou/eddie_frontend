@@ -16,14 +16,14 @@ function ProjectCard({ project, onEdit }: ProjectCardProps) {
   };
 
   return (
-    <div className='bg-gray-200 max-w-sm rounded overflow-hidden shadow-lg h-96 flex flex-1 flex-col justify-between'>
+    <div className='bg-gray-200 w-72 rounded overflow-hidden shadow-lg h-96 flex flex-1 flex-col justify-between'>
       <img className='w-full' src={project.imageUrl} alt={project.name} />
       <section className='px-6 py-4'>
         <div className='font-bold text-xl mb-2'>{project.name}</div>
         <p className='text-gray-700 text-base'>{formatDescription(project.description)}</p>
       </section>
       <div className='px-6 pt-4 pb-2'>
-        <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
+        <span className='inline-block bg-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
           Budget : {project.budget.toLocaleString()}
         </span>
         <a
@@ -31,7 +31,7 @@ function ProjectCard({ project, onEdit }: ProjectCardProps) {
             handleEditClick(project);
           }}
           href='#'
-          className='inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+          className='inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 float-right'
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'

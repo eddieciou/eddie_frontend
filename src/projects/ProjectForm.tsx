@@ -71,7 +71,7 @@ function ProjectForm({ project: initialProject, onCancel, onSave }: projectFormP
   };
 
   return (
-    <form className='p-4 shadow-lg bg-gray-100 rounded max-w-sm h-96 ' onSubmit={handleSubmit}>
+    <form className='p-4 shadow-lg bg-gray-100 rounded w-72 h-96 ' onSubmit={handleSubmit}>
       <label htmlFor='name'>Project Name</label>
       <input
         className='w-full rounded p-2'
