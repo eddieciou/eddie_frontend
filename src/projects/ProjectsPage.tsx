@@ -53,7 +53,7 @@ function ProjectsPage() {
 
   return (
     <>
-      <h1>Projects</h1>
+      <h1 className='font-bold text-5xl py-5 px-2'>Projects</h1>
       {error && (
         <div>
           <div>
