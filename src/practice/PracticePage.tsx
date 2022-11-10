@@ -1,8 +1,8 @@
 import React from 'react';
-import Preflight from './Preflight';
+import PracticeBox from './PracticeBox';
 
 function PracticePage() {
-  return <Preflight />;
+  return <PracticeBox />;
 }
 
 export default PracticePage;
