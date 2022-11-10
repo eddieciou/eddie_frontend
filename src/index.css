@@ -2,19 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
 body {
-    @apply w-screen h-screen justify-center items-center
+    @apply h-screen
 }
 
-#魚缸 {
-    @apply border-8 border-t-0 border-gray-400 relative rounded-b-lg
-}
-
-#魚缸::after{
-    @apply absolute block bg-blue-100 w-full h-[90%] content-[''] bottom-0 z-[-1]
-}
-
-#金魚 {
-    @apply w-24 h-16 bg-goldfish bg-contain bg-center bg-no-repeat;
+@layer components {
+    .box{
+        @apply w-20 h-20 bg-gray-500 text-white text-3xl font-bold flex justify-center items-center rounded-md cursor-pointer
+    }
 }
