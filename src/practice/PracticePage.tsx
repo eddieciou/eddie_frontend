@@ -1,8 +1,8 @@
 import React from 'react';
-import PracticeRWD from './PracticeRWD';
+import PracticeAnimation from './PracticeAnimation';
 
 function PracticePage() {
-  return <PracticeRWD />;
+  return <PracticeAnimation />;
 }
 
 export default PracticePage;
