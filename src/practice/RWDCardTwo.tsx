@@ -2,7 +2,7 @@ import React from 'react';
 
 function RwdCardTwo() {
   return (
-    <div className='p-6 max-w-xs md:max-w-md mx-auto bg-white hover:bg-gray-300 active:bg-gray-700 rounded-xl shadow-lg flex items-center space-x-4'>
+    <div className='card'>
       <div className='shrink-0'>
         <svg className='h-12 w-12' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'>
           <defs>
