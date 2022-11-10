@@ -1,8 +1,8 @@
 import React from 'react';
-import RWDCardThree from './RWDCardThree';
+import IntroLayer from './IntroLayer';
 
 function PracticePage() {
-  return <RWDCardThree />;
+  return <IntroLayer />;
 }
 
 export default PracticePage;
