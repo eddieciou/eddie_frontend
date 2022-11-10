@@ -1,8 +1,8 @@
 import React from 'react';
-import IntroLayer from './IntroLayer';
+import Preflight from './Preflight';
 
 function PracticePage() {
-  return <IntroLayer />;
+  return <Preflight />;
 }
 
 export default PracticePage;
