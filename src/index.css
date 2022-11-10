@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h1 {
+        @apply text-4xl
+    }
+    h2 {
+        @apply text-xl
+    }
+}
+
 .card{
     @apply p-6 max-w-xs md:max-w-md mx-auto bg-white hover:bg-gray-300 active:bg-gray-700 rounded-xl shadow-lg flex items-center space-x-4
 }

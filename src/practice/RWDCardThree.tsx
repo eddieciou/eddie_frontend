@@ -3,7 +3,8 @@ import React from 'react';
 function RwdCardThree() {
   return (
     <div>
-      <h1 className='text-sm laptop:text-6xl'>標題</h1>
+      <h1>標題</h1>
+      <h2>副標題</h2>
       <div className='max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl'>
         <div className='md:flex'>
           <div className='md:shrink-0'>
