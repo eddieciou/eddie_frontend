@@ -1,8 +1,8 @@
 import React from 'react';
-import RWDCardTwo from './RWDCardTwo';
+import RWDCardThree from './RWDCardThree';
 
 function PracticePage() {
-  return <RWDCardTwo />;
+  return <RWDCardThree />;
 }
 
 export default PracticePage;
