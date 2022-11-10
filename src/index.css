@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 body {
-    @apply h-screen
+
 }
 
 @layer components {
     .box{
         @apply w-20 h-20 bg-gray-500 text-white text-3xl font-bold flex justify-center items-center rounded-md cursor-pointer
+    }
+
+    .product {
+        @apply w-56 p-3 bg-gray-100 border rounded-lg shadow-lg justify-center items-center
     }
 }

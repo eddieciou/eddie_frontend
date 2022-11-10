@@ -1,8 +1,8 @@
 import React from 'react';
-import PracticeVariants from './PracticeVariants';
+import PracticeRWD from './PracticeRWD';
 
 function PracticePage() {
-  return <PracticeVariants />;
+  return <PracticeRWD />;
 }
 
 export default PracticePage;
