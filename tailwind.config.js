@@ -3,7 +3,11 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        goldfish: 'url(https://i.imgur.com/qk0fxEp.png)',
+      },
+    },
     screens: {
       sm: '640px',
       // => @media (min-width: 640px) { ... }

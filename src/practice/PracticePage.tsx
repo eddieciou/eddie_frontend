@@ -1,8 +1,8 @@
 import React from 'react';
-import PracticeBox from './PracticeBox';
+import GoldenFishGame from './GoldenFishGame';
 
 function PracticePage() {
-  return <PracticeBox />;
+  return <GoldenFishGame />;
 }
 
 export default PracticePage;
