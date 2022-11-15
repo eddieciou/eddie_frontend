@@ -1,8 +1,8 @@
 import React from 'react';
-import PracticeCounter from './hook/PracticeCounter';
+import NetSpeedChanger from './hook/NetSpeedChanger/NetSpeedChanger';
 
 function PracticePage() {
-  return <PracticeCounter />;
+  return <NetSpeedChanger />;
 }
 
 export default PracticePage;
