@@ -1,8 +1,8 @@
 import React from 'react';
-import PracticeAnimation from './PracticeAnimation';
+import PracticeCounter from './hook/PracticeCounter';
 
 function PracticePage() {
-  return <PracticeAnimation />;
+  return <PracticeCounter />;
 }
 
 export default PracticePage;

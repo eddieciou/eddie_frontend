@@ -40,7 +40,7 @@ function App() {
           Practice
         </NavLink>
       </header>
-      <div className='container'>
+      <div>
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/practice' element={<PracticePage />} />

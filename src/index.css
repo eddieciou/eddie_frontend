@@ -14,4 +14,7 @@ body {
     .product {
         @apply w-56 p-3 bg-gray-100 border rounded-lg shadow-lg justify-center items-center
     }
+    .chevron {
+        @apply bg-transparent bg-center snap-center bg-no-repeat cursor-pointer w-24 h-24 transition-all duration-300
+    }
 }
