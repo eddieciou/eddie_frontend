@@ -1,8 +1,8 @@
 import React from 'react';
-import NetSpeedChanger from './hook/NetSpeedChanger/NetSpeedChanger';
+import WeatherApp from './hook/WeatherApp/WeatherApp';
 
 function PracticePage() {
-  return <NetSpeedChanger />;
+  return <WeatherApp />;
 }
 
 export default PracticePage;
