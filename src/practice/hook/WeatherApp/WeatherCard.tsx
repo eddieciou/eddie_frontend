@@ -3,14 +3,21 @@ import WeatherIcon from './WeatherIcon';
 import { WeatherElement } from './WeatherApp';
 
 interface WeatherCardProps {
+  cityName: string;
   weatherElement: WeatherElement;
   fetchData: () => void;
+  setCurrentPage: (value: string) => void;
 }
 
-function WeatherCard({ weatherElement, fetchData }: WeatherCardProps) {
+function WeatherCard({ weatherElement, fetchData, setCurrentPage, cityName }: WeatherCardProps) {
   return (
     <div className='relative w-96 shadow-lg shadow-gray-700 bg-white p-2'>
-      <div className='text-3xl mb-6'>{weatherElement.locationName}</div>
+      <img
+        onClick={() => setCurrentPage('WeatherSetting')}
+        className='absolute top-2 right-1 w-8 cursor-pointer'
+        src='https://cdn-icons-png.flaticon.com/512/126/126472.png'
+      />
+      <div className='text-3xl mb-6'>{cityName}</div>
       <div className='text-sm text-gray-500 mb-6'>{weatherElement.description}</div>
       <div className='flex justify-between items-center mb-6'>
         <div className='text-gray-500 text-6xl flex font-light'>
