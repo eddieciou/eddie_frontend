@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import WeatherIcon, { WeatherTypes } from './WeatherIcon';
 
 const fetchWeatherForecast = () => {
   return fetch(
@@ -56,15 +57,27 @@ const fetchCurrentWeather = () => {
     });
 };
 
+interface WeatherElement {
+  observationTime: Date;
+  locationName: string;
+  humid: number;
+  temperature: number;
+  windSpeed: number;
+  description: string;
+  weatherCode: keyof WeatherTypes;
+  rainPossibility: number;
+  comfortability: string;
+}
+
 function WeatherApp() {
-  const [weatherElement, setWeatherElement] = useState({
+  const [weatherElement, setWeatherElement] = useState<WeatherElement>({
     observationTime: new Date(),
     locationName: '',
     humid: 0,
     temperature: 0,
     windSpeed: 0,
     description: '',
-    weatherCode: 0,
+    weatherCode: 1,
     rainPossibility: 0,
     comfortability: '',
   });
@@ -109,10 +122,7 @@ function WeatherApp() {
             {Math.round(weatherElement.temperature)}
             <div className='text-3xl font-normal'>°C</div>
           </div>
-          <img
-            className='basis-2/6 w-16'
-            src='https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_5-128.png'
-          />
+          <WeatherIcon currentWeatherCode={weatherElement.weatherCode} moment='night' />
         </div>
         <div className='flex items-center text-xl font-light text-gray-500 mb-4'>
           <img
